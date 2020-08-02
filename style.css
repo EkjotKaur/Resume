@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  background-color: #b9ebcc;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+nav ul li{
+  float: left;
+  padding: 22px 30px;
+  font-size: 25px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+nav ul{
+  list-style-type: none;
+  float: right; 
+  margin: 0 50px;
+}
+nav{
+  background-color: #342ead;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+}
+.block{
+  height: 100vh;
+  display: table;
+  width: 100%;
+}
+.inner{
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 50px;
+  width: 100%;
+  margin: auto;
+}
+#home{
+  background: rgb(234,98,39);
+  background: radial-gradient(circle, rgba(234,98,39,1) 44%, rgba(242,165,26,1) 100%);
+  text-align: center;
+  overflow-x: hidden;
+}
+#home .inner img{
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+#home .inner h1{
+  font-size: 60px;
+  color: white;
+}
+h1{
+  font-size: 55px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+#about{
+  background: url("https://www.rambina.com/wp-content/uploads/2016/05/website-design-background-1.jpg") fixed;
+  background-size: cover;
+  color: white;
+  width: 100%;
+}
+#about .inner p{
+  width: 70%;
+  padding-top: 30px;
+}
+#education .inner div div, #skills .inner div div, #hobbies .inner div{
+  width: 30%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+#education .inner div div img{
+  width: 150px;
+}
+hr{
+  width: 100%;
+  padding-bottom: 10px;
+}
+#skills{
+  background: url("https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg") fixed;
+  background-size: cover;
+  color: white;
+  font-size: 35px;
+}
+#skills .inner div div{
+  width: 22%;
+}
+#skills .inner{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+i{
+  font-size: 100px;
+}
+#hobbies .inner div p{
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+#contact{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+#contact .inner p span{
+  font-weight: 700;
+}
+#contact .inner div span{
+  text-align: center;
+  margin: auto;
+}
+#contact .inner div span i{
+  font-size: 40px;
+  padding: 20px;
+  color: #342ead;
+  margin: 100px 0 0 0;
+}
+
+/* Reponsive Design */
+
+@media (min-width: 310px) and (max-width: 780px){
+  #education .inner div div, #skills .inner div div, #hobbies .inner div{
+    width: 100%;
+  }
+  nav ul li{
+    padding: 10px 10px;
+    font-size: 20px;
+    display: block;
+  }
+  h1{
+    text-align: center;
+  }
+  #home,#about, #skills, #eduaction, #contact, #hobbies{
+    overflow: hidden;
+  }
+  #home .inner img{
+    margin-top: 100px;
+  }
+}
