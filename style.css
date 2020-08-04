@@ -1,38 +1,45 @@
-body{
+html, body {
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   background-color: #b9ebcc;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-nav ul li{
+nav ul li {
   float: left;
   padding: 22px 30px;
   font-size: 25px;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: white;
 }
-nav ul{
+nav ul {
   list-style-type: none;
-  float: right; 
+  float: right;
   margin: 0 50px;
 }
-nav{
+nav {
   background-color: #342ead;
   height: 70px;
   position: fixed;
   width: 100%;
 }
-.block{
+.block {
   height: 100vh;
   display: table;
   width: 100%;
 }
-.inner{
+.inner {
   display: table-cell;
   vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.2);
@@ -40,82 +47,90 @@ nav{
   width: 100%;
   margin: auto;
 }
-#home{
-  background: rgb(234,98,39);
-  background: radial-gradient(circle, rgba(234,98,39,1) 44%, rgba(242,165,26,1) 100%);
+#home {
+  background: rgb(234, 98, 39);
+  background: radial-gradient(
+    circle,
+    rgba(234, 98, 39, 1) 44%,
+    rgba(242, 165, 26, 1) 100%
+  );
   text-align: center;
   overflow-x: hidden;
 }
-#home .inner img{
+#home .inner img {
   width: 300px;
   border-radius: 50%;
   border: 2px solid black;
 }
-#home .inner h1{
+#home .inner h1 {
   font-size: 60px;
   color: white;
 }
-h1{
-  font-size: 55px;
+h1 {
+  font-size: 50px;
   font-weight: bolder;
   margin-bottom: 5px;
 }
-#about{
-  background: url("https://www.rambina.com/wp-content/uploads/2016/05/website-design-background-1.jpg") fixed;
+#about {
+  background: url("https://www.rambina.com/wp-content/uploads/2016/05/website-design-background-1.jpg")
+    fixed;
   background-size: cover;
   color: white;
   width: 100%;
 }
-#about .inner p{
+#about .inner p {
   width: 70%;
   padding-top: 30px;
 }
-#education .inner div div, #skills .inner div div, #hobbies .inner div{
+#education .inner div div,
+#skills .inner div div,
+#hobbies .inner div {
   width: 30%;
   float: left;
   padding: 10px;
   text-align: center;
 }
-#education .inner div div img{
+#education .inner div div img {
   width: 150px;
 }
-hr{
+hr {
   width: 100%;
   padding-bottom: 10px;
 }
-#skills{
-  background: url("https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg") fixed;
+#skills {
+  background: url("https://img.freepik.com/free-vector/programming-code-coding-hacker-background-programming-code-icon-made-with-binary-code_127544-815.jpg?size=626&ext=jpg")
+    fixed;
   background-size: cover;
   color: white;
   font-size: 35px;
 }
-#skills .inner div div{
+#skills .inner div div {
   width: 22%;
 }
-#skills .inner{
+#skills .inner {
   background-color: rgba(0, 0, 0, 0.7);
 }
-i{
+i {
   font-size: 100px;
 }
-#hobbies .inner div p{
+#hobbies .inner div p {
   font-size: 40px;
   font-weight: 700;
   padding-top: 20px;
 }
-#contact{
+#contact {
   text-align: center;
   background-color: black;
   color: white;
 }
-#contact .inner p span{
+#contact .inner p span {
   font-weight: 700;
 }
-#contact .inner div span{
+#contact .inner div span {
   text-align: center;
   margin: auto;
 }
-#contact .inner div span i{
+#contact .inner div span i {
   font-size: 40px;
   padding: 20px;
   color: #342ead;
@@ -124,22 +139,45 @@ i{
 
 /* Reponsive Design */
 
-@media (min-width: 310px) and (max-width: 780px){
-  #education .inner div div, #skills .inner div div, #hobbies .inner div{
+@media (min-width: 310px) and (max-width: 780px) {
+  #education .inner div div,
+  #skills .inner div div,
+  #hobbies .inner div {
     width: 100%;
   }
-  nav ul li{
-    padding: 10px 10px;
-    font-size: 20px;
+  nav ul li {
+    padding: 5px 5px;
+    font-size: 16px;
     display: block;
   }
-  h1{
+  nav ul{
+    margin: 10px 25px; 
+  }
+  h1 {
     text-align: center;
   }
-  #home,#about, #skills, #eduaction, #contact, #hobbies{
+  #home,
+  #about,
+  #skills,
+  #eduaction,
+  #contact,
+  #hobbies {
     overflow: hidden;
   }
-  #home .inner img{
+  #home .inner img {
     margin-top: 100px;
+  }
+  #about .inner p {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+}
+ @media (min-width: 310px) and (max-width: 480px) {
+  #home .inner, #skills .inner, #hobbies .inner{
+    padding: 0 10px;
+  }
+  #education .inner {
+    padding: 0 0px;
   }
 }
